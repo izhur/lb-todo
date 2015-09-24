@@ -57,3 +57,8 @@ $ gulp lib
 $ gulp build
 $ ionic serve
 ```
+
+gulp lib: copying some of bower components to www folder, so ionic application can access it.
+
+gulp build: create lib.min.js, minified version of some js library.
+

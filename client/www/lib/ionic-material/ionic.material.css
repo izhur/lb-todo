@@ -840,8 +840,8 @@
 /* Item
 ==================================*/
 .item {
-  font-size: 14px;
-  width: 100%; }
+  /* font-size: 14px;
+  width: 100%; */ }
 
 .item-icon-left .icon {
   left: 16px; }

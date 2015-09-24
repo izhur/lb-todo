@@ -1,0 +1,21 @@
+<ion-view view-title="TODOS List" align-title="left">
+    <ion-content>
+        <div class="list animate-fade-slide-in-right">
+                <a class="item item-icon-left item-icon-right waves-effect waves-button waves-dark" ng-click="showSheet($index)" ng-repeat="todo in todos">
+                    <i ng-if="todo.done" class="icon ion-checkmark-circled balanced"></i>
+                    <i ng-if="!todo.done" class="icon ion-ios-circle-outline energized"></i>
+                    <h2>{{todo.title}}</h2>
+                    <p>{{todo.caption}}</p>
+                    <span class="item-time" am-time-ago="todo.timedone"></span>
+                </a>
+            </div>
+    </ion-content>
+    <ion-footer-bar align-title="left" class="">
+        <h1 class="title"></h1>
+        <div class="buttons buttons-right">
+            <button class="button button-energized-900 button-fab" ng-click="add()">
+                <i class="icon ion-plus light"></i>
+            </button>
+        </div>
+    </ion-footer-bar>
+</ion-view>

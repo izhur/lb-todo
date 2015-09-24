@@ -1,0 +1,28 @@
+<ion-view view-title="Login" align-title="left">
+    <ion-content style="background: url(img/mountains.jpg) center; background-size: cover;">
+        <div class="no-header flat">
+            <div class="content">
+                <div class="app-icon"></div>
+                <h1>TODO App</h1>
+            </div>
+        </div>
+        <form name="form">
+            <div class="text-center">
+                <p ng-show="errors.statusCode" class="error">{{ errors.statusCode }} {{ errors.message}}</p>
+            </div>
+            <div class="list">
+                <ion-md-input placeholder="Username" ng-model="user.username" highlight-color="balanced" type="text"></ion-md-input>
+                <ion-md-input placeholder="Email" ng-model="user.email" highlight-color="balanced" type="text"></ion-md-input>
+                <ion-md-input placeholder="Password" ng-model="user.password" highlight-color="energized" type="password"></ion-md-input>
+                <ion-md-input placeholder="Retype-Password" ng-model="user.password2" highlight-color="energized" type="password"></ion-md-input>
+            </div>
+            <div class="padding">
+                <button ng-click="signup()" class="button button-full button-assertive ink">Sign UP</button>
+            </div>
+            <div class="padding light text-center">
+                already have account, <br/>
+                use, <a ng-href="#/app/signin">SignIn</a>
+            </div>
+        </form>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,18 @@
+/* Empty. Add your own CSS if you like */
+.social-login {
+    position: fixed;
+    bottom: 0;
+}
+
+.item .item-time {
+	font-size: 12px;
+	position: absolute;
+	top: 5px;
+	right: 15px;
+}
+.item-input .border-bottom {
+	border-bottom: solid 1px #ccc;
+}
+.input-label {
+	color: #aaa;
+}

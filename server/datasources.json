@@ -1,0 +1,16 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "tododb": {
+    "host": "localhost",
+    "port": 27017,
+    "database": "tododb",
+    "username": "demo",
+    "password": "demo",
+    "name": "tododb",
+    "connector": "mongodb",
+    "user": "demo"
+  }
+}

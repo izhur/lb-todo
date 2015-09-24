@@ -1,0 +1,31 @@
+<ion-view view-title="SignIn" align-title="left">
+    <ion-content class="animate-pan-in-left" style="background: url(img/mountains.jpg) center; background-size: cover;">
+        <div class="hero no-header flat">
+            <div class="content">
+                <div class="app-icon"></div>
+                <h1>TODO App</h1>
+            </div>
+        </div>
+        <form name="form">
+            <div class="text-center">
+                <p ng-show="errors.statusCode" class="error">{{ errors.statusCode }} {{ errors.message}}</p>
+            </div>
+            <div class="list">
+                <ion-md-input placeholder="Username" ng-model="user.username" highlight-color="balanced" type="text"></ion-md-input>
+                <ion-md-input placeholder="Password" ng-model="user.password" highlight-color="energized" type="password"></ion-md-input>
+            </div>
+            <div class="padding">
+                <button ng-click="signin()" class="button button-full button-assertive ink">Sign In</button>
+            </div>
+            <div class="padding light text-center">
+                don't have account, <br/>
+                create account for accessing todo, <a ng-href="#/app/signup">SignUp</a>
+            </div>
+            <div class="button-bar social-login">
+                <button class="button button-small button-border icon-left ion-social-google button-assertive-900">Google+</button>
+                <button class="button button-small button-border icon-left ion-social-twitter button-calm-900">Twitter</button>
+                <button class="button button-small button-border icon-left ion-social-facebook button-positive-900">Facebook</button>
+            </div>
+        </form>
+    </ion-content>
+</ion-view>

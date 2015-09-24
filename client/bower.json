@@ -1,0 +1,19 @@
+{
+  "name": "Todo",
+  "private": "true",
+  "devDependencies": {
+    "ionic": "driftyco/ionic-bower#1.1.0"
+  },
+  "resolutions": {
+    "ionic": "1.1.0",
+    "angular": "1.4.6",
+    "angular-sanitize": "~1.4.6",
+    "angular-animate": "~1.4.6"
+  },
+  "dependencies": {
+    "angular-moment": "~0.10.3",
+    "angular-resource": "~1.4.6",
+    "ionic-material": "~0.4.2",
+    "moment": "~2.10.6"
+  }
+}

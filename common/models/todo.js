@@ -7,7 +7,7 @@ module.exports = function(Todo) {
 		next();
 	});
 
-	Todo.beforeRemote('save',function(context,unused, next){
+	Todo.beforeRemote('*.save',function(context,unused, next){
 		var req = context.req;
 		if (req.body.done=true) {
 			req.body.timedone = Date.now();
@@ -19,4 +19,9 @@ module.exports = function(Todo) {
 		next();
 	});
 
+	Todo.beforeUpdate = function(next,model){
+		//console.log(model);
+		model.updated_at = Date.now();
+		next();
+	};
 };
